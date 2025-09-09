@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Document</title>
     <link rel="icon" href="./images/SVGs/output-onlinepngtools.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -19,280 +19,462 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container px-0 mx-0 header-container">
-      <header
-        class="d-flex flex-wrap justify-content-center py-3 mb-0 border-bottom navbar-fixed"
-      >
-        <a
-          href="#"
-          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-        >
-          <img src="./images/SVGs/output-onlinepngtools.png" width="50px" />
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="./images/SVGs/output-onlinepngtools.png"
+            height="40"
+            alt="Logo"
+          />
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Projex">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-me">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a href="#" class="nav-link" aria-current="page">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a href="#Projex" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact-me" class="nav-link">Contact</a>
-          </li>
+    <div class="intro-box" id="homepage">
+      <!-- Circular profile image -->
+      <img
+        src="./images/profile-new.jpg"
+        alt="Jude Harrison"
+        class="intro-profile-pic"
+      />
+
+      <!-- Text content wrapped around the image -->
+      <div class="intro-text">
+        <h1>Hi, I’m <strong>Infant Jude Harrison</strong></h1>
+        <h3>
+          Aspiring <strong>Software Development Engineer (SDE)</strong> |
+          Specialized in <strong>Frontend & Responsive Design</strong>
+        </h3>
+        <p>
+          I’m a developer passionate about building
+          <strong>scalable, user-friendly applications</strong>. My expertise
+          lies in crafting <strong>responsive web interfaces</strong> with
+          <strong>HTML, CSS, JavaScript, and React</strong>, while also applying
+          my <strong>UI/UX design experience in Figma</strong> to create
+          intuitive and visually appealing digital products.
+        </p>
+        <p>
+          I aim to grow as an <strong>SDE</strong>, where I can combine strong
+          <strong>problem-solving skills</strong> with my ability to design and
+          implement <strong>clean, efficient, and responsive solutions</strong>.
+        </p>
+
+        <!-- Call-to-Action Buttons -->
+        <div class="cta-buttons">
+          <a href="#Projex" class="btn btn-primary"> View My Projects</a>
+          <a
+            href="./InfantJudeHarrison.pdf"
+            target="_blank"
+            class="btn btn-primary"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="container skill-container" id="skills">
+      <h2 class="section-title">My Skills</h2>
+
+      <div class="skills-category">
+        <h3>Languages</h3>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>Java</li>
         </ul>
-      </header>
-    </div>
-    <div class="intro-box my-5 py-5" id="homepage">
-      <div class="about-container">
-        <div class="name-cont">
-          <div>
-            <h1>Hey I'm <br />Jude Harrison!</h1>
-          </div>
-        </div>
-        <div class="abt-img-cont">
-          <img class="prof-pic" src="./images/profile-1.jpeg" alt="prof-pic" />
-        </div>
-        <div class="intro-para">
-          <div>
-            <p>
-              A Creative Web Developer and dedicated engineering student with a
-              strong foundation in coding and problem-solving. Commited to
-              merging technical skills with innovative design to build seamless
-              user experiences.
-            </p>
-          </div>
-        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Frontend</h3>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Backend</h3>
+        <ul class="skills-list">
+          <li>Node.js</li>
+          <li>Express</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Databases</h3>
+        <ul class="skills-list">
+          <li>MySQL</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
+
+      <div class="skills-category">
+        <h3>Tools & Others</h3>
+        <ul class="skills-list">
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+          <li>Figma (UI/UX)</li>
+        </ul>
       </div>
     </div>
 
-    <div class="container skill-container px-5 my-5" id="skills">
-      <h2>My Skills !</h2>
-      <div class="row align-items-start skill-row">
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/html-icon.svg"
-            width="50px"
-            style="margin: 20px"
-          />
-        </div>
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/css-icon.svg"
-            width="50px"
-            style="margin: 20px"
-          />
-        </div>
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/bootstrap-5-logo-icon.svg"
-            width="70px"
-            style="margin: 20px"
-          />
-        </div>
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/problem-solving-icon.svg"
-            width="50px"
-            style="margin: 20px"
-          />
-        </div>
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/python-programming-language-icon.svg"
-            width="50px"
-            style="margin: 20px"
-          />
-        </div>
-        <div class="col-4 col-lg-2">
-          <img
-            src="./images/SVGs/javascript-programming-language-icon.svg"
-            width="50px"
-            style="margin: 20px"
-          />
-        </div>
-      </div>
-    </div>
+    <div class="projects-container" id="Projex">
+      <h2 class="section-title">My Projects</h2>
 
-    <div class="container px-5 py-5" id="Projex">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          <div class="caro-cont">
-            <div id="carouselExampleDark" class="carousel carousel-dark slide">
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleDark"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img
-                    src="./images/move-it.png"
-                    class="d-block w-100"
-                    alt="move-it"
-                  />
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img
-                    src="./images/tindog.png"
-                    class="d-block w-100"
-                    alt="tindog"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="./images/design-agency.png"
-                    class="d-block w-100"
-                    alt="design-agency"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-            My Projects
-          </h1>
-          <p class="lead">
-            Explore my diverse projects that blend creativity and innovation,
-            showcasing my journey as a passionate Developer.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a href="./11.2 Bootstrap Components/index.html"
-              ><button type="button" class="btn btn-primary">Move It</button></a
-            >
-            <a href="./11.3 TinDog Project/index.html"
-              ><button type="button" class="btn btn-primary">TinDog</button></a
-            >
-            <a href="./8.4 Web Design Agency Project/index.html"
-              ><button type="button" class="btn btn-primary">DEV</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container px-4 py-5" id="contact-me">
-      <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-        <div class="col d-flex flex-column align-items-start gap-2">
-          <h2 class="fw-bold text-body-emphasis">Contact Me</h2>
-          <p class="text-body-secondary">
-            "I'd love to hear from you! Whether you have questions,
-            collaboration ideas, or just want to connect, don’t hesitate to
-            reach out!"
-          </p>
-        </div>
-
-        <div class="col">
-          <div class="col d-flex flex-column gap-2 pb-3">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-            >
-              <a href="https://www.linkedin.com/in/jude-harrison22/">
+      <div class="project-grid">
+        <!-- TravelHub -->
+        <div class="project-card">
+          <div
+            id="travelhubCarousel"
+            class="carousel slide project-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img
-                  src="./images/SVGs/linkedin-svgrepo-com.svg"
-                  height="50px"
-                  width="50px"
+                  src="./images/travelhub-screenshot1.png"
+                  class="d-block w-100"
+                  alt="TravelHub Screenshot 1"
                 />
-              </a>
-            </div>
-
-            <h4 class="fw-semibold mb-0 text-body-emphasis">LinkedIn</h4>
-          </div>
-
-          <div class="col d-flex flex-column gap-2 py-3">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
-            >
-              <a href="https://github.com/JudeHarrison">
+              </div>
+              <div class="carousel-item">
                 <img
-                  src="./images/SVGs/github-142-svgrepo-com.svg"
-                  height="40px"
-                  width="40px"
-              /></a>
+                  src="./images/travelhub-screenshot2.png"
+                  class="d-block w-100"
+                  alt="TravelHub Screenshot 2"
+                />
+              </div>
             </div>
-            <h4 class="fw-semibold mb-0 text-body-emphasis">GitHub</h4>
-          </div>
-
-          <div class="col d-flex flex-column gap-2 pt-3">
-            <div
-              class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#travelhubCarousel"
+              data-bs-slide="prev"
             >
-              <a href="mailto:judeharrison710@gmail.com">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#travelhubCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="project-info">
+            <h3>TravelHub</h3>
+            <p>
+              Full-stack online tour booking platform showcasing seamless user
+              experience, bookings, and tour management.
+            </p>
+            <h4>Tech Used:</h4>
+            <p class="tech-stack-inline">
+              <span>• HTML</span>
+              <span>• CSS</span>
+              <span>• JavaScript</span>
+              <span>• React</span>
+              <span>• Node.js</span>
+              <span>• MongoDB</span>
+            </p>
+
+            <a
+              href="https://github.com/JudeHarrison/TravelHub"
+              target="_blank"
+              class="btn btn-primary"
+              >View Code</a
+            >
+          </div>
+        </div>
+
+        <!-- TinyTales -->
+        <div class="project-card">
+          <div
+            id="tinytalesCarousel"
+            class="carousel slide project-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img
-                  src="./images/SVGs/email-9-svgrepo-com.svg"
-                  height="40px"
-                  width="40px"
-              /></a>
+                  src="./images/tinytales-screenshot1.png"
+                  class="d-block w-100"
+                  alt="TinyTales Screenshot 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/tinytales-screenshot2.png"
+                  class="d-block w-100"
+                  alt="TinyTales Screenshot 2"
+                />
+              </div>
             </div>
-            <h4 class="fw-semibold mb-0 text-body-emphasis">Email</h4>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#tinytalesCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#tinytalesCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="project-info">
+            <h3>TinyTales</h3>
+            <p>
+              Front-end project with gamified learning experience for 6-7 year
+              olds, focusing on interactive storytelling and UI design.
+            </p>
+            <h4>Tech Used:</h4>
+            <p class="tech-stack-inline">
+              <span>• HTML</span>
+              <span>• CSS</span>
+              <span>• JavaScript</span>
+            </p>
+            <a
+              href="https://judeharrison.github.io/TinyTales/"
+              target="_blank"
+              class="btn btn-primary"
+              >View</a
+            >
+          </div>
+        </div>
+
+        <!-- LifeDrop -->
+        <div class="project-card">
+          <div
+            id="lifedropCarousel"
+            class="carousel slide project-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/lifedrop-screenshot1.png"
+                  class="d-block w-100"
+                  alt="LifeDrop Screenshot 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/lifedrop-screenshot2.png"
+                  class="d-block w-100"
+                  alt="LifeDrop Screenshot 2"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#lifedropCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#lifedropCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="project-info">
+            <h3>LifeDrop</h3>
+            <p>
+              UI/UX design for a blood donation mobile app, focusing on clean
+              interface and seamless user journey for donors and recipients.
+            </p>
+            <h4>Tech Used:</h4>
+            <p class="tech-stack-inline">
+              <span>• Figma</span>
+            </p>
+            <a
+              href="https://www.figma.com/design/xpgxBWcLNMEdvyPnNyDvLk/LifeDrop?node-id=0-1&t=63lMJPSUJKRsfSQD-1"
+              target="_blank"
+              class="btn btn-primary"
+              >View in Figma</a
+            >
+          </div>
+        </div>
+
+        <!-- MoveIt -->
+        <div class="project-card">
+          <div
+            id="moveitCarousel"
+            class="carousel slide project-carousel"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/moveit-screenshot1.png"
+                  class="d-block w-100"
+                  alt="MoveIt Screenshot 1"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/moveit-screenshot2.png"
+                  class="d-block w-100"
+                  alt="MoveIt Screenshot 2"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#moveitCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#moveitCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="project-info">
+            <h3>MoveIt</h3>
+            <p>
+              Home page design for a packers and movers website, focusing on
+              clean layout, easy navigation, and responsive UI.
+            </p>
+            <h4>Tech Used:</h4>
+            <p class="tech-stack-inline">
+              <span>• HTML</span>
+              <span>• CSS</span>
+              <span>• Bootstrap</span>
+            </p>
+            <a
+              href="./11.2 Bootstrap Components/index.html"
+              target="_blank"
+              class="btn btn-primary"
+              >View</a
+            >
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Contact Me Section -->
+    <section
+      id="contact-me"
+      class="py-5"
+      style="background: #0f1035; color: #ffffff"
+    >
+      <div class="container text-center">
+        <h2>Contact Me</h2>
+        <p>
+          Let's get in touch! Feel free to reach out for collaborations or
+          projects.
+        </p>
+
+        <div
+          class="contact-icons my-4 d-flex justify-content-center gap-4 flex-wrap"
+        >
+          <a
+            href="mailto:judeharrison710@gmail.com"
+            target="_blank"
+            class="contact-icon"
+          >
+            <img src="./images/SVGs/email-9-svgrepo-com.svg" alt="Email" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/judeharrison77/"
+            target="_blank"
+            class="contact-icon"
+          >
+            <img src="./images/SVGs/linkedin-svgrepo-com.svg" alt="LinkedIn" />
+          </a>
+          <a
+            href="https://github.com/JudeHarrison"
+            target="_blank"
+            class="contact-icon"
+          >
+            <img src="./images/SVGs/github-142-svgrepo-com.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
 
-  <footer
-    class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-  >
-    <div class="col-md-4 d-flex align-items-center">
-      <a
-        href="#"
-        class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
-      >
-        <img
-          src="./images/SVGs/output-onlinepngtools.png"
-          height="40px"
-          width="40px"
-          style="margin-left: 20px"
-        />
-      </a>
-      <span class="mb-3 mb-md-0 text-body-secondary">© Jude Harrison</span>
-    </div>
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <p>
+      &copy; 2025 <strong>Infant Jude Harrison</strong>. All rights reserved.
+    </p>
   </footer>
 </html>
